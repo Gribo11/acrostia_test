@@ -1,0 +1,93 @@
+// COMMON STYLES
+
+* {
+    box-sizing: border-box;
+}
+
+section, div{
+    position: relative;
+}
+
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+  color: #fff;
+    font-size: 60px;
+     font-family: "Lato";
+    text-transform: uppercase;
+    font-weight: $weight-light;
+   
+}
+
+h3{
+
+font-size: 30px;
+font-weight: $weight-light;
+
+ line-height:58px;
+
+
+}
+
+p{
+font-size: 14px;
+line-height: 24px;
+ font-family: "Lato";
+ font-weight:$weight-norm;
+}
+
+span{
+    font-size: 20px;
+    font-weight: $weight-light;
+
+}
+
+a{
+    font-family: "Lato";
+    text-transform: inherit;
+    text-decoration: none;
+    font-weight:$weight-norm;
+   
+    
+}
+
+
+// mixin
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($time) {
+ -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
+
+
+//extend
+
+.position_center{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
